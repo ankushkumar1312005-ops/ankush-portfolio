@@ -1,0 +1,390 @@
+/* =========================================
+   SHOWREEL CSS — ANKUSH CINEFILMS
+   Landscape Video Showcase Grid with Audio Controls
+   ========================================= */
+
+.showreel-section {
+    position: relative;
+    width: 100%;
+    padding: var(--section-padding-y) var(--section-padding-x);
+    background: var(--dark-surface);
+    overflow: hidden;
+}
+
+.showreel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Ambient glow behind showreel */
+.showreel-glow {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60%;
+    background: radial-gradient(ellipse at center, rgba(200, 255, 0, 0.08), rgba(46, 102, 255, 0.05), transparent 70%);
+    filter: blur(80px);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Landscape Showreel Grid */
+.showreel-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+@media (min-width: 1300px) {
+    /* 5 items: first row 3, second row 2 centered or wide */
+    .showreel-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .showreel-grid .showreel-card:nth-child(1),
+    .showreel-grid .showreel-card:nth-child(2),
+    .showreel-grid .showreel-card:nth-child(3) {
+        grid-column: span 2;
+    }
+    .showreel-grid .showreel-card:nth-child(4),
+    .showreel-grid .showreel-card:nth-child(5) {
+        grid-column: span 3;
+    }
+}
+
+/* Individual Showreel Video Card */
+.showreel-card {
+    position: relative;
+    background: #080808;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.showreel-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--border-hover);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+}
+
+.showreel-card.is-playing {
+    border-color: var(--lime);
+    box-shadow: 0 20px 60px rgba(200, 255, 0, 0.18);
+}
+
+/* Video Frame (16:9 Landscape) */
+.showreel-media-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.showreel-media-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card Header HUD */
+.showreel-hud-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+    z-index: 4;
+    pointer-events: none;
+    transition: opacity var(--transition-fast);
+}
+
+.showreel-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--lime);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(200, 255, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.showreel-hud-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    pointer-events: auto;
+}
+
+.showreel-status-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--white);
+    background: rgba(0, 0, 0, 0.65);
+    padding: 3px 9px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.showreel-status-badge .sound-icon {
+    color: var(--lime);
+}
+
+.reel-fullscreen-pill-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: var(--radius-full);
+    padding: 3px 10px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all var(--transition-fast);
+    pointer-events: auto;
+}
+
+.reel-fullscreen-pill-btn:hover {
+    background: var(--lime);
+    color: #000;
+    border-color: var(--lime);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--lime-glow);
+}
+
+/* Center Play Button Overlay */
+.showreel-play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: rgba(12, 12, 12, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 5;
+    transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast), opacity var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.showreel-play-overlay .play-icon {
+    margin-left: 3px;
+}
+
+.showreel-media-wrap:hover .showreel-play-overlay {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: var(--lime);
+    color: #000;
+    box-shadow: 0 0 30px var(--lime-glow);
+    border-color: var(--lime);
+}
+
+.showreel-card.is-playing .showreel-play-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.showreel-card.is-playing:hover .showreel-play-overlay {
+    opacity: 0.9;
+    pointer-events: auto;
+}
+
+/* Interactive Control Bar at Bottom of Video */
+.showreel-ctrl-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 18px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 6;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.showreel-media-wrap:hover .showreel-ctrl-bar,
+.showreel-card.is-playing .showreel-ctrl-bar {
+    opacity: 1;
+}
+
+.showreel-ctrl-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.showreel-ctrl-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.showreel-ctrl-btn:hover {
+    background: var(--lime);
+    color: #000;
+    border-color: var(--lime);
+}
+
+.showreel-time {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--light-grey);
+}
+
+/* Card Information Footer */
+.showreel-info {
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #0d0d0d;
+    border-top: 1px solid var(--border);
+    flex-grow: 1;
+}
+
+.showreel-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showreel-video-title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+.showreel-music-badge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lime);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(200, 255, 0, 0.08);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.showreel-video-desc {
+    font-size: 13px;
+    color: var(--light-grey);
+    line-height: 1.6;
+}
+
+/* Bottom Showreel Highlights Grid */
+.showreel-footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 45px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+}
+
+.showreel-meta-item h4 {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--lime);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.showreel-meta-item p {
+    font-size: 14px;
+    color: var(--light-grey);
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .showreel-grid {
+        grid-template-columns: 1fr;
+    }
+    .showreel-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .showreel-play-overlay {
+        width: 52px;
+        height: 52px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .showreel-hud-top {
+        padding: 10px 14px;
+    }
+    .showreel-status-badge {
+        display: none; /* Hide duplicate audio badge on small mobile to give tag & fullscreen button full room */
+    }
+    .showreel-tag {
+        font-size: 9px;
+        padding: 2px 8px;
+    }
+    .reel-fullscreen-pill-btn {
+        padding: 2px 8px;
+        font-size: 9px;
+    }
+    .showreel-info {
+        padding: 18px;
+    }
+    .showreel-video-title {
+        font-size: 16px;
+    }
+    .showreel-video-desc {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}

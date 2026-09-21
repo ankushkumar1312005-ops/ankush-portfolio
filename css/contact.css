@@ -1,0 +1,399 @@
+/* =========================================
+   CONTACT SECTION CSS — ANKUSH PORTFOLIO
+   ========================================= */
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    padding: var(--section-padding-y) var(--section-padding-x);
+    background: var(--dark-surface);
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 6vw;
+    margin-top: 50px;
+}
+
+/* ---------- DIRECT CHANNELS & SOCIALS ---------- */
+.contact-channels {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact-lead-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--light-grey);
+}
+
+.direct-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.direct-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all var(--transition-fast);
+}
+
+.direct-card:hover {
+    border-color: var(--lime);
+    background: var(--card-hover);
+    transform: translateX(4px);
+}
+
+.direct-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.direct-card-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--grey);
+    text-transform: uppercase;
+}
+
+.direct-card-val {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.direct-card-icon {
+    font-size: 18px;
+    color: var(--light-grey);
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.direct-card:hover .direct-card-icon {
+    color: var(--lime);
+    transform: translate(2px, -2px);
+}
+
+/* Social links list */
+.social-links-box {
+    margin-top: 10px;
+}
+
+.social-links-title {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--lime);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.social-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.social-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: all var(--transition-fast);
+}
+
+.social-card:hover {
+    border-color: var(--border-hover);
+    background: var(--card-hover);
+    transform: translateY(-3px);
+}
+
+.social-platform {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-handle {
+    font-size: 11px;
+    color: var(--grey);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.social-card:hover .social-platform {
+    color: var(--lime);
+}
+
+/* ---------- PROJECT INQUIRY FORM ---------- */
+.inquiry-form-wrap {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 45px;
+}
+
+.form-header {
+    margin-bottom: 28px;
+}
+
+.form-header h3 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    font-size: 14px;
+    color: var(--light-grey);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--light-grey);
+    text-transform: uppercase;
+}
+
+.form-input, .form-select, .form-textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 14px;
+    transition: all var(--transition-fast);
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+    outline: none;
+    border-color: var(--lime);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 15px rgba(200, 255, 0, 0.15);
+}
+
+.form-select option {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-actions-group {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.form-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 30px;
+    background: var(--lime);
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+}
+
+.wa-submit-btn {
+    background: #25D366;
+    color: #000000;
+}
+
+.wa-submit-btn:hover {
+    background: #20bd5a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.email-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 28px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-hover);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.email-submit-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: var(--white);
+    transform: translateY(-2px);
+}
+
+.form-actions-hint {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--grey);
+    margin-top: 4px;
+    line-height: 1.5;
+    display: block;
+}
+
+.form-feedback {
+    display: none;
+    margin-top: 18px;
+    padding: 20px 24px;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.form-feedback.success {
+    display: block;
+    background: rgba(37, 211, 102, 0.08);
+    border: 1px solid rgba(37, 211, 102, 0.4);
+    color: var(--white);
+}
+
+.form-feedback-actions {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.feedback-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.feedback-btn-wa {
+    background: #25D366;
+    color: #000;
+}
+
+.feedback-btn-wa:hover {
+    background: #20bd5a;
+    transform: translateY(-1px);
+}
+
+.feedback-btn-mail {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    border: 1px solid var(--border);
+}
+
+.feedback-btn-mail:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: var(--white);
+    transform: translateY(-1px);
+}
+
+/* Responsive Contact */
+@media (max-width: 960px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .social-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .inquiry-form-wrap {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .inquiry-form-wrap {
+        padding: 20px 16px;
+        border-radius: var(--radius-md);
+    }
+    .form-input, .form-select, .form-textarea {
+        font-size: 16px; /* Prevents iOS Safari auto-zoom on input focus */
+        padding: 12px 14px;
+    }
+    .form-actions-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .wa-submit-btn, .email-submit-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+    }
+}

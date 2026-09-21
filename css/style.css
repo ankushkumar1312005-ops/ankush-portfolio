@@ -1,0 +1,38 @@
+/* =========================================
+   MAIN CSS CONTROLLER
+   Ankush Cinefilms Portfolio
+   Cinematographer · Photographer · Video Editor · Web Developer
+   ========================================= */
+
+/* GLOBAL & FOUNDATIONS */
+@import url("./global.css");
+
+/* NAVIGATION */
+@import url("./navbar.css");
+
+/* HERO SECTION */
+@import url("./hero.css");
+
+/* SHOWREEL & VIDEO PLAYER */
+@import url("./showreel.css");
+
+/* FEATURED CLIENT WORKS & PROJECTS */
+@import url("./work.css");
+
+/* PHOTOGRAPHY GALLERY & LIGHTBOX */
+@import url("./gallery.css");
+
+/* SERVICES & DISCIPLINES */
+@import url("./services.css");
+
+/* EXPERIENCE & CREATIVE WORKFLOW */
+@import url("./experience.css");
+
+/* ABOUT & CREATOR TOOLKIT */
+@import url("./about.css");
+
+/* CONTACT & PROJECT INQUIRY */
+@import url("./contact.css");
+
+/* FOOTER */
+@import url("./footer.css");

@@ -1,0 +1,139 @@
+/* =========================================
+   FOOTER CSS — ANKUSH PORTFOLIO
+   ========================================= */
+
+.site-footer {
+    position: relative;
+    width: 100%;
+    padding: 100px var(--section-padding-x) 40px;
+    background: var(--black);
+    border-top: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-brand-huge {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 10vw, 170px);
+    line-height: 0.88;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--white);
+    user-select: none;
+    transition: color var(--transition-base);
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.footer-brand-huge span {
+    color: #333330;
+    display: inline-block;
+    transition: color var(--transition-base);
+}
+
+.footer-brand-huge:hover span {
+    color: var(--lime);
+}
+
+.footer-middle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.footer-clock-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--light-grey);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.footer-links-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-links-nav a {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--light-grey);
+}
+
+.footer-links-nav a:hover {
+    color: var(--lime);
+}
+
+.back-to-top-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.back-to-top-btn:hover {
+    background: var(--lime);
+    color: var(--black);
+    border-color: var(--lime);
+}
+
+.footer-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--grey);
+    letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+    .footer-middle-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ankush Kumar Thakur — Cinematographer, Photographer, Video Editor & Web Developer. Working with global brands like Loriini Skincare and cultural initiatives like People of Jamshedpur to craft cinematic visual stories and digital experiences.">
+    <meta name="keywords"
+        content="Ankush Kumar Thakur, Ankush Cinefilms, Cinematographer, Photographer, Video Editor, Web Developer, Jamshedpur, Loriini Skincare, People of Jamshedpur">
+    <meta name="author" content="Ankush Kumar Thakur">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Ankush Kumar Thakur — Cinematographer & Visual Creator">
+    <meta property="og:description"
+        content="Visual Director, Cinematographer, Photographer, Video Editor & Web Developer.">
+    <meta property="og:image" content="assets/image/profile.jpg">
+    <meta property="og:type" content="website">
+
+    <title>Ankush Kumar Thakur — Cinematographer, Photographer & Web Developer</title>
+
+    <!-- Professional Editorial & Cinematic Typography (Plus Jakarta Sans, Cinzel, Space Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Cinzel:wght@600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         GRAIN OVERLAY
+    ========================================== -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Ambient Particle Canvas (Cursor-interactive, Low-opacity, Dark/Light adaptive) -->
+    <canvas id="ambientParticlesCanvas" class="ambient-particles-canvas" aria-hidden="true"></canvas>
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+    <header class="navbar">
+        <div class="nav-inner">
+            <!-- Brand -->
+            <a href="#" class="brand" aria-label="Ankush Kumar Thakur Home">
+                <span class="brand-main">ANKUSH</span>
+                <span class="brand-tag">KUMAR THAKUR</span>
+            </a>
+
+            <!-- Status Indicator & Theme Switcher -->
+            <div class="nav-actions-wrap" style="display: flex; align-items: center; gap: 14px;">
+                <div class="nav-status">
+                    <span class="pulse-dot"></span>
+                    <span>Available for Projects</span>
+                </div>
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark or Light Mode"
+                    title="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                    <span class="theme-label">Dark</span>
+                </button>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="nav-links" id="primary-navigation">
+                <a href="#showreel">Reel</a>
+                <a href="#work">Work</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#services">Services</a>
+                <a href="#experience">Experience</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="start-project">
+                    <span>Start a project</span>
+                    <span class="arrow">↗</span>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- =========================================
+             HERO SECTION
+        ========================================== -->
+        <section class="hero">
+            <div class="hero-main">
+                <!-- Content Left -->
+                <div class="hero-content">
+                    <div class="hero-label">
+                        <span class="pulse-dot"></span>
+                        <span>Cinematographer</span>
+                        <span class="separator">·</span>
+                        <span>Photographer</span>
+                        <span class="separator">·</span>
+                        <span>Video Editor</span>
+                        <span class="separator">·</span>
+                        <span>Web Developer</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="title-white">I FRAME</span>
+                        <span class="title-grey">YOUR IMAGINATION</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm <strong>Ankush Kumar Thakur</strong> — a visual storyteller who loves
+                        cinematography, creative lighting, video editing, and web development.
+                        I create engaging visual experiences for brands and creative projects.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#work" class="primary-button">
+                            <span>Explore Selected Works</span>
+                            <span>↓</span>
+                        </a>
+                        <a href="#showreel" class="secondary-button">
+                            <span>Watch Showreel</span>
+                            <span>▶</span>
+                        </a>
+                        <a href="#contact" class="secondary-button">
+                            <span>Let's Talk</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <span>Based in India</span>
+                        <span>·</span>
+                        <span>Collaborating Worldwide</span>
+                        <span>·</span>
+                        <span>© 2026</span>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Viewfinder Right -->
+                <div class="hero-visual">
+                    <div class="viewfinder-frame">
+                        <div class="vf-corner vf-tl"></div>
+                        <div class="vf-corner vf-tr"></div>
+                        <div class="vf-corner vf-bl"></div>
+                        <div class="vf-corner vf-br"></div>
+
+                        <div class="vf-rec">
+                            <span class="rec-dot"></span>
+                            <span>REC</span>
+                        </div>
+                        <div class="vf-settings">
+                            <span>4K · 24FPS · ISO 800</span>
+                        </div>
+
+                        <div class="hero-img-wrap">
+                            <img src="assets/image/profile.jpg"
+                                alt="Ankush Kumar Thakur photographing with a Sony mirrorless camera" class="hero-img"
+                                width="1402" height="1122" fetchpriority="high">
+                            <div class="hero-img-badge">
+                                <span class="badge-label">BEHIND THE LENS</span>
+                                <span class="badge-brand">ANKUSH CINEFILMS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Ticker Banner -->
+            <div class="hero-ticker-wrap reveal-on-scroll">
+                <div class="hero-stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">3<span>+</span></div>
+                        <div class="stat-label">Global & Community Client Engagements</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100<span>+</span></div>
+                        <div class="stat-label">High-Impact Visual Deliverables</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Integrated Creative Disciplines</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100<span>%</span></div>
+                        <div class="stat-label">Dedication to Story & Craft</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             SHOWREEL / VIDEO SECTION (LANDSCAPE GRID WITH SOUND & FULLSCREEN)
+        ========================================== -->
+        <section id="showreel" class="showreel-section">
+            <div class="showreel-container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-top-line">
+                        <span class="section-tag">01 / SHOWREEL</span>
+                        <div class="section-rule"></div>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h2 class="section-title">
+                            MOTION <span class="text-muted">& LIGHT</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Cinematic landscape reels capturing sacred riverbanks, locomotive commutes, wildlife in
+                            flight, and urban chronicles. <strong>Click any reel to play with music & audio</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="showreel-glow"></div>
+
+                <!-- 5-Video Landscape Grid -->
+                <div class="showreel-grid reveal-on-scroll">
+
+                    <!-- Reel 1: Bhram Varanasi -->
+                    <div class="showreel-card">
+                        <div class="showreel-media-wrap">
+                            <video loop playsinline preload="metadata"
+                                poster="assets/image/thumbnails/bhram_varanasi_thumb.jpg">
+                                <source src="assets/video/SHOWREEL/bhram%20varansi.mp4" type="video/mp4">
+                            </video>
+                            <div class="showreel-hud-top">
+                                <span class="showreel-tag">01 / SPIRITUAL GAZE</span>
+                                <div class="showreel-hud-right">
+                                    <div class="showreel-status-badge">
+                                        <span class="sound-icon">♪</span>
+                                        <span>PLAY WITH MUSIC ▶</span>
+                                    </div>
+                                    <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Video"
+                                        title="View Fullscreen">
+                                        <span>⛶ Fullscreen</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="showreel-play-overlay" aria-label="Play Bhram Varanasi with Music">
+                                <span class="play-icon">▶</span>
+                            </button>
+                            <div class="showreel-ctrl-bar">
+                                <div class="showreel-ctrl-actions">
+                                    <button class="showreel-ctrl-btn ctrl-play-btn"
+                                        aria-label="Play or Pause">▶</button>
+                                    <button class="showreel-ctrl-btn ctrl-mute-btn"
+                                        aria-label="Toggle Sound">🔊</button>
+                                    <span class="showreel-time">00:00 / 00:00</span>
+                                </div>
+                                <button class="showreel-ctrl-btn ctrl-fs-btn" aria-label="Fullscreen">⛶</button>
+                            </div>
+                        </div>
+                        <div class="showreel-info">
+                            <div class="showreel-title-row">
+                                <h3 class="showreel-video-title">BHRAM VARANASI</h3>
+                                <span class="showreel-music-badge"><span>♪</span> Audio Enabled</span>
+                            </div>
+                            <p class="showreel-video-desc">Atmospheric dusk reflections, ancient stone ghats, and
+                                spiritual rhythm along the eternal Ganges.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reel 2: Birds Flight -->
+                    <div class="showreel-card">
+                        <div class="showreel-media-wrap">
+                            <video loop playsinline preload="metadata"
+                                poster="assets/image/thumbnails/birds_flight_thumb.jpg">
+                                <source src="assets/video/SHOWREEL/Birds(1).mp4" type="video/mp4">
+                            </video>
+                            <div class="showreel-hud-top">
+                                <span class="showreel-tag">02 / AERIAL WILDLIFE</span>
+                                <div class="showreel-hud-right">
+                                    <div class="showreel-status-badge">
+                                        <span class="sound-icon">♪</span>
+                                        <span>PLAY WITH MUSIC ▶</span>
+                                    </div>
+                                    <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Video"
+                                        title="View Fullscreen">
+                                        <span>⛶ Fullscreen</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="showreel-play-overlay" aria-label="Play Birds Flight with Music">
+                                <span class="play-icon">▶</span>
+                            </button>
+                            <div class="showreel-ctrl-bar">
+                                <div class="showreel-ctrl-actions">
+                                    <button class="showreel-ctrl-btn ctrl-play-btn"
+                                        aria-label="Play or Pause">▶</button>
+                                    <button class="showreel-ctrl-btn ctrl-mute-btn"
+                                        aria-label="Toggle Sound">🔊</button>
+                                    <span class="showreel-time">00:00 / 00:00</span>
+                                </div>
+                                <button class="showreel-ctrl-btn ctrl-fs-btn" aria-label="Fullscreen">⛶</button>
+                            </div>
+                        </div>
+                        <div class="showreel-info">
+                            <div class="showreel-title-row">
+                                <h3 class="showreel-video-title">BIRDS IN FLIGHT</h3>
+                                <span class="showreel-music-badge"><span>♪</span> Audio Enabled</span>
+                            </div>
+                            <p class="showreel-video-desc">High frame-rate telephoto tracking of migratory flock flight
+                                against serene atmospheric sky gradients.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reel 3: Glimpses of Local Train -->
+                    <div class="showreel-card">
+                        <div class="showreel-media-wrap">
+                            <video loop playsinline preload="metadata"
+                                poster="assets/image/thumbnails/local_train_thumb.jpg">
+                                <source src="assets/video/SHOWREEL/Glimpses%20Of%20Local%20Train(1).mp4"
+                                    type="video/mp4">
+                            </video>
+                            <div class="showreel-hud-top">
+                                <span class="showreel-tag">03 / TRANSIT PULSE</span>
+                                <div class="showreel-hud-right">
+                                    <div class="showreel-status-badge">
+                                        <span class="sound-icon">♪</span>
+                                        <span>PLAY WITH MUSIC ▶</span>
+                                    </div>
+                                    <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Video"
+                                        title="View Fullscreen">
+                                        <span>⛶ Fullscreen</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="showreel-play-overlay" aria-label="Play Glimpses of Local Train with Music">
+                                <span class="play-icon">▶</span>
+                            </button>
+                            <div class="showreel-ctrl-bar">
+                                <div class="showreel-ctrl-actions">
+                                    <button class="showreel-ctrl-btn ctrl-play-btn"
+                                        aria-label="Play or Pause">▶</button>
+                                    <button class="showreel-ctrl-btn ctrl-mute-btn"
+                                        aria-label="Toggle Sound">🔊</button>
+                                    <span class="showreel-time">00:00 / 00:00</span>
+                                </div>
+                                <button class="showreel-ctrl-btn ctrl-fs-btn" aria-label="Fullscreen">⛶</button>
+                            </div>
+                        </div>
+                        <div class="showreel-info">
+                            <div class="showreel-title-row">
+                                <h3 class="showreel-video-title">LOCAL TRAIN GLIMPSES</h3>
+                                <span class="showreel-music-badge"><span>♪</span> Audio Enabled</span>
+                            </div>
+                            <p class="showreel-video-desc">Kinetic iron tracks, passing stations, and the hypnotic
+                                cadence of daily Indian suburban transit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reel 4: Jamshedpur City Chronicle -->
+                    <div class="showreel-card">
+                        <div class="showreel-media-wrap">
+                            <video loop playsinline preload="metadata"
+                                poster="assets/image/thumbnails/jsr_pulse_thumb.jpg">
+                                <source src="assets/video/SHOWREEL/Jsr%20Vid.mp4" type="video/mp4">
+                            </video>
+                            <div class="showreel-hud-top">
+                                <span class="showreel-tag">04 / URBAN IDENTITY</span>
+                                <div class="showreel-hud-right">
+                                    <div class="showreel-status-badge">
+                                        <span class="sound-icon">♪</span>
+                                        <span>PLAY WITH MUSIC ▶</span>
+                                    </div>
+                                    <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Video"
+                                        title="View Fullscreen">
+                                        <span>⛶ Fullscreen</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="showreel-play-overlay" aria-label="Play Jamshedpur Video with Music">
+                                <span class="play-icon">▶</span>
+                            </button>
+                            <div class="showreel-ctrl-bar">
+                                <div class="showreel-ctrl-actions">
+                                    <button class="showreel-ctrl-btn ctrl-play-btn"
+                                        aria-label="Play or Pause">▶</button>
+                                    <button class="showreel-ctrl-btn ctrl-mute-btn"
+                                        aria-label="Toggle Sound">🔊</button>
+                                    <span class="showreel-time">00:00 / 00:00</span>
+                                </div>
+                                <button class="showreel-ctrl-btn ctrl-fs-btn" aria-label="Fullscreen">⛶</button>
+                            </div>
+                        </div>
+                        <div class="showreel-info">
+                            <div class="showreel-title-row">
+                                <h3 class="showreel-video-title">JAMSHEDPUR PULSE</h3>
+                                <span class="showreel-music-badge"><span>♪</span> Audio Enabled</span>
+                            </div>
+                            <p class="showreel-video-desc">Industrial heritage, wide tree-lined boulevards, and cultural
+                                energy across the steel city of Jamshedpur.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reel 5: Cinematic Master Reel -->
+                    <div class="showreel-card">
+                        <div class="showreel-media-wrap">
+                            <video loop playsinline preload="metadata"
+                                poster="assets/image/thumbnails/cinematic_reel_thumb.jpg">
+                                <source src="assets/video/SHOWREEL/0306-01_1772806824935.mp4" type="video/mp4">
+                            </video>
+                            <div class="showreel-hud-top">
+                                <span class="showreel-tag">05 / EDITORIAL CUT</span>
+                                <div class="showreel-hud-right">
+                                    <div class="showreel-status-badge">
+                                        <span class="sound-icon">♪</span>
+                                        <span>PLAY WITH MUSIC ▶</span>
+                                    </div>
+                                    <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Video"
+                                        title="View Fullscreen">
+                                        <span>⛶ Fullscreen</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="showreel-play-overlay" aria-label="Play Cinematic Master Reel with Music">
+                                <span class="play-icon">▶</span>
+                            </button>
+                            <div class="showreel-ctrl-bar">
+                                <div class="showreel-ctrl-actions">
+                                    <button class="showreel-ctrl-btn ctrl-play-btn"
+                                        aria-label="Play or Pause">▶</button>
+                                    <button class="showreel-ctrl-btn ctrl-mute-btn"
+                                        aria-label="Toggle Sound">🔊</button>
+                                    <span class="showreel-time">00:00 / 00:00</span>
+                                </div>
+                                <button class="showreel-ctrl-btn ctrl-fs-btn" aria-label="Fullscreen">⛶</button>
+                            </div>
+                        </div>
+                        <div class="showreel-info">
+                            <div class="showreel-title-row">
+                                <h3 class="showreel-video-title">CINEMATIC MONTAGE</h3>
+                                <span class="showreel-music-badge"><span>♪</span> Audio Enabled</span>
+                            </div>
+                            <p class="showreel-video-desc">A refined montage of lighting setups, slow-motion movement,
+                                and dynamic pacing across multiple productions.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Showreel Details Grid -->
+                <div class="showreel-footer-grid reveal-on-scroll">
+                    <div class="showreel-meta-item">
+                        <h4>Aesthetic Direction</h4>
+                        <p>High-contrast natural lighting, cinematic lens flares, precise depth of field, and nuanced
+                            color science.</p>
+                    </div>
+                    <div class="showreel-meta-item">
+                        <h4>Post Production</h4>
+                        <p>DaVinci Resolve Studio color grading, Adobe Premiere Pro rhythmic editing, and dynamic sound
+                            engineering.</p>
+                    </div>
+                    <div class="showreel-meta-item">
+                        <h4>Execution</h4>
+                        <p>From concept storyboard to multi-format deliverables calibrated for web, social, and
+                            commercial broadcast.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             WORK SECTION — FEATURED CASE STUDIES
+             (LORIINI SKINCARE & PEOPLE OF JAMSHEDPUR)
+        ========================================== -->
+        <section id="work" class="work-section">
+            <div class="work-container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-top-line">
+                        <span class="section-tag">02 / SELECTED WORK</span>
+                        <div class="section-rule"></div>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h2 class="section-title">
+                            FEATURED <span class="text-muted">PROJECTS</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Commercial skincare campaigns and grassroots documentary chronicles engineered to captivate
+                            and inspire.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects-list">
+
+                    <!-- PROJECT 01: LORIINI SKINCARE (US BRAND) -->
+                    <article class="project-card reveal-on-scroll">
+                        <div class="project-visual">
+                            <span class="project-overlay-badge">US Commercial</span>
+                            <img src="assets/image/LORIINI%20WORKS/MEGFRESH%20CLEANSER.png"
+                                alt="Loriini Skincare MEGFRESH Cleanser commercial product cinematography"
+                                class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta-top">
+                                <span class="project-number">CASE STUDY / 01</span>
+                                <span class="project-client-badge">USA · Beauty & Wellness</span>
+                            </div>
+                            <h3 class="project-title">LORIINI SKINCARE</h3>
+                            <p class="project-desc">
+                                Creative visual direction, product cinematography, and video editing for Loriini
+                                Skincare, a modern US-based skincare label. Crafting a luminous, high-end visual tone
+                                emphasizing clean botanical formulations, crystal-clear hydration, and elegant organic
+                                textures.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-chip">Commercial Direction</span>
+                                <span class="tag-chip">Product Photography</span>
+                                <span class="tag-chip">Video Editing</span>
+                                <span class="tag-chip">Color Grading</span>
+                            </div>
+                            <div class="project-deliverables">
+                                <div class="deliv-item"><span class="bullet">✔</span> 4K Commercial Brand Films</div>
+                                <div class="deliv-item"><span class="bullet">✔</span> Social E-Commerce Reels</div>
+                                <div class="deliv-item"><span class="bullet">✔</span> High-Key Still Life Assets</div>
+                                <div class="deliv-item"><span class="bullet">✔</span> Pacing & Color Harmonization</div>
+                            </div>
+                            <button type="button" class="project-gallery-btn" data-open-modal="loriiniModal">
+                                <span>MORE LORIINI WORKS</span>
+                                <span class="arrow">↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 02: PEOPLE OF JAMSHEDPUR -->
+                    <article class="project-card reverse reveal-on-scroll">
+                        <div class="project-visual">
+                            <span class="project-overlay-badge">Docu-Series</span>
+                            <img src="assets/image/PEOPLE%20OF%20JAMSHEDPUR/IMG20251111172517.jpg"
+                                alt="People of Jamshedpur cultural documentary photograph" class="project-img"
+                                loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta-top">
+                                <span class="project-number">CASE STUDY / 02</span>
+                                <span class="project-client-badge">India · Community Archive</span>
+                            </div>
+                            <h3 class="project-title">PEOPLE OF JAMSHEDPUR</h3>
+                            <p class="project-desc">
+                                An ongoing cultural documentary and photojournalism initiative chronicling the human
+                                spirit, heritage rituals, and street vibrancy of Jamshedpur. Capturing authentic
+                                personal portraits and sacred ceremonial gatherings with intimate cinematic framing.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-chip">Documentary Cinematography</span>
+                                <span class="tag-chip">Street Photography</span>
+                                <span class="tag-chip">Cultural Archival</span>
+                                <span class="tag-chip">Visual Journalism</span>
+                            </div>
+                            <div class="project-deliverables">
+                                <div class="deliv-item"><span class="bullet">✔</span> Street Photojournalism Series
+                                </div>
+                                <div class="deliv-item"><span class="bullet">✔</span> Festival & Heritage Mini-Docs
+                                </div>
+                                <div class="deliv-item"><span class="bullet">✔</span> Archival Portrait Collection</div>
+                                <div class="deliv-item"><span class="bullet">✔</span> Cultural Narrative Direction</div>
+                            </div>
+                            <button type="button" class="project-gallery-btn" data-open-modal="pojModal">
+                                <span>MORE PEOPLE OF JAMSHEDPUR WORKS</span>
+                                <span class="arrow">↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             PROJECT MODAL 1: LORIINI SKINCARE GALLERY
+             (VIDEOS MUTED BY DEFAULT WITH FULLSCREEN BUTTON)
+        ========================================== -->
+        <div class="project-modal" id="loriiniModal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <div class="modal-title-wrap">
+                        <span class="modal-badge">COMMERCIAL CASE ARCHIVE</span>
+                        <h3 class="modal-title">LORIINI SKINCARE (USA)</h3>
+                    </div>
+                    <button class="modal-close-btn" aria-label="Close Loriini Works Gallery">
+                        <span>✕ Close</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Video Reels Section -->
+                    <div class="modal-section">
+                        <div class="modal-section-heading">
+                            <h4><span>🎥</span> Commercial Video Reels</h4>
+                            <span class="badge-note">Muted by default · Click to play</span>
+                        </div>
+                        <div class="modal-reels-grid">
+                            <!-- Reel 1: Gotu Kola -->
+                            <div class="modal-reel-card">
+                                <div class="modal-reel-media">
+                                    <video loop playsinline muted preload="metadata"
+                                        poster="assets/image/thumbnails/gotu_kola_thumb.jpg">
+                                        <source src="assets/video/LORIINI%20REEL/gotu%20kola%20reel.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <div class="modal-reel-hud">
+                                        <span class="reel-muted-badge">🔇 Muted</span>
+                                        <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Reel"
+                                            title="View Fullscreen">
+                                            <span>⛶ Fullscreen</span>
+                                        </button>
+                                    </div>
+                                    <button class="modal-reel-play-btn" aria-label="Play Gotu Kola Reel">▶</button>
+                                </div>
+                                <div class="modal-reel-info">
+                                    <span class="modal-reel-title">Gotu Kola Botanical Reel</span>
+                                    <span class="modal-reel-meta">Clean Formula Campaign · 9:16</span>
+                                </div>
+                            </div>
+
+                            <!-- Reel 2: GRWM Reel -->
+                            <div class="modal-reel-card">
+                                <div class="modal-reel-media">
+                                    <video loop playsinline muted preload="metadata"
+                                        poster="assets/image/thumbnails/loriini_grwm_thumb.jpg">
+                                        <source src="assets/video/LORIINI%20REEL/LORIINI%20GRWM%20REEL(1).mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <div class="modal-reel-hud">
+                                        <span class="reel-muted-badge">🔇 Muted</span>
+                                        <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Reel"
+                                            title="View Fullscreen">
+                                            <span>⛶ Fullscreen</span>
+                                        </button>
+                                    </div>
+                                    <button class="modal-reel-play-btn" aria-label="Play GRWM Reel">▶</button>
+                                </div>
+                                <div class="modal-reel-info">
+                                    <span class="modal-reel-title">Get Ready With Me (GRWM)</span>
+                                    <span class="modal-reel-meta">Lifestyle E-Commerce Reel · 9:16</span>
+                                </div>
+                            </div>
+
+                            <!-- Reel 3: UGC Reel 2 -->
+                            <div class="modal-reel-card">
+                                <div class="modal-reel-media">
+                                    <video loop playsinline muted preload="metadata"
+                                        poster="assets/image/thumbnails/ugc_reel_thumb.jpg">
+                                        <source src="assets/video/LORIINI%20REEL/UGC%20REEL%202.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="modal-reel-hud">
+                                        <span class="reel-muted-badge">🔇 Muted</span>
+                                        <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Reel"
+                                            title="View Fullscreen">
+                                            <span>⛶ Fullscreen</span>
+                                        </button>
+                                    </div>
+                                    <button class="modal-reel-play-btn" aria-label="Play UGC Reel">▶</button>
+                                </div>
+                                <div class="modal-reel-info">
+                                    <span class="modal-reel-title">UGC Commercial Experience</span>
+                                    <span class="modal-reel-meta">High-Retention Social Cut · 9:16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Images / Posts Section (Scoped Loriini Images) -->
+                    <div class="modal-section">
+                        <div class="modal-section-heading">
+                            <h4><span>📷</span> Product Photography & Social Campaigns</h4>
+                            <span class="badge-note">Click any image to inspect in full resolution</span>
+                        </div>
+                        <div class="modal-images-grid">
+                            <div class="modal-img-card" data-src="assets/image/LORIINI%20WORKS/MEGFRESH%20CLEANSER.png"
+                                data-title="Megfresh Cleanser Master"
+                                data-specs="Loriini Skincare · Commercial Photography">
+                                <img src="assets/image/LORIINI%20WORKS/MEGFRESH%20CLEANSER.png"
+                                    alt="MEGFRESH Cleanser product bottle" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Megfresh Cleanser Master</span>
+                                </div>
+                            </div>
+                            <div class="modal-img-card"
+                                data-src="assets/image/LORIINI%20WORKS/Megbright%20Moisturizer.png"
+                                data-title="Megbright Moisturizer Master"
+                                data-specs="Loriini Skincare · Commercial Photography">
+                                <img src="assets/image/LORIINI%20WORKS/Megbright%20Moisturizer.png"
+                                    alt="Megbright Moisturizer product bottle" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Megbright Moisturizer Master</span>
+                                </div>
+                            </div>
+                            <div class="modal-img-card"
+                                data-src="assets/image/LORIINI%20WORKS/LORIINI%20CAROUSAL%20(1).png"
+                                data-title="Loriini Carousel Campaign" data-specs="Loriini Skincare · Social Campaign">
+                                <img src="assets/image/LORIINI%20WORKS/LORIINI%20CAROUSAL%20(1).png"
+                                    alt="Loriini Carousel Graphic" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Loriini Carousel Campaign</span>
+                                </div>
+                            </div>
+                            <div class="modal-img-card" data-src="assets/image/LORIINI%20WORKS/Loriini%20Post.png"
+                                data-title="Social Media Creative Post" data-specs="Loriini Skincare · Brand Asset">
+                                <img src="assets/image/LORIINI%20WORKS/Loriini%20Post.png"
+                                    alt="Loriini Social Post Graphic" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Social Media Creative Post</span>
+                                </div>
+                            </div>
+                            <div class="modal-img-card"
+                                data-src="assets/image/LORIINI%20WORKS/Megbright%20ingredients%20post%20.png"
+                                data-title="Active Ingredients Breakdown"
+                                data-specs="Loriini Skincare · Product Detail">
+                                <img src="assets/image/LORIINI%20WORKS/Megbright%20ingredients%20post%20.png"
+                                    alt="Megbright Ingredients Post" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Active Ingredients Breakdown</span>
+                                </div>
+                            </div>
+                            <div class="modal-img-card"
+                                data-src="assets/image/LORIINI%20WORKS/megfresh%20benefits%20post.png"
+                                data-title="Megfresh Benefits Campaign"
+                                data-specs="Loriini Skincare · Commercial Creative">
+                                <img src="assets/image/LORIINI%20WORKS/megfresh%20benefits%20post.png"
+                                    alt="Megfresh Benefits Post" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Megfresh Benefits Campaign</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =========================================
+             PROJECT MODAL 2: PEOPLE OF JAMSHEDPUR GALLERY
+             (VIDEOS MUTED BY DEFAULT WITH FULLSCREEN BUTTON)
+        ========================================== -->
+        <div class="project-modal" id="pojModal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <div class="modal-title-wrap">
+                        <span class="modal-badge">COMMUNITY ARCHIVE</span>
+                        <h3 class="modal-title">PEOPLE OF JAMSHEDPUR</h3>
+                    </div>
+                    <button class="modal-close-btn" aria-label="Close People of Jamshedpur Gallery">
+                        <span>✕ Close</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Video Reels Section -->
+                    <div class="modal-section">
+                        <div class="modal-section-heading">
+                            <h4><span>🎥</span> Community Docu-Reels & Stories</h4>
+                            <span class="badge-note">Muted by default · Click to play</span>
+                        </div>
+                        <div class="modal-reels-grid">
+                            <!-- POJ Reel 1 -->
+                            <div class="modal-reel-card">
+                                <div class="modal-reel-media">
+                                    <video loop playsinline muted preload="metadata"
+                                        poster="assets/image/thumbnails/poj_video_thumb.jpg">
+                                        <source src="assets/video/PEOPLE%20OF%20JAMSHEDPUR%20REEL/POJ%20VIDEO(1).mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <div class="modal-reel-hud">
+                                        <span class="reel-muted-badge">🔇 Muted</span>
+                                        <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Reel"
+                                            title="View Fullscreen">
+                                            <span>⛶ Fullscreen</span>
+                                        </button>
+                                    </div>
+                                    <button class="modal-reel-play-btn" aria-label="Play POJ Video Reel">▶</button>
+                                </div>
+                                <div class="modal-reel-info">
+                                    <span class="modal-reel-title">People of Jamshedpur Docu Reel</span>
+                                    <span class="modal-reel-meta">Community Chronicled · 9:16</span>
+                                </div>
+                            </div>
+
+                            <!-- POJ Reel 2: Pratik Video Final -->
+                            <div class="modal-reel-card">
+                                <div class="modal-reel-media">
+                                    <video loop playsinline muted preload="metadata"
+                                        poster="assets/image/thumbnails/pratik_video_thumb.jpg">
+                                        <source
+                                            src="assets/video/PEOPLE%20OF%20JAMSHEDPUR%20REEL/PRATIK%20VIDEO%20FINAL.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <div class="modal-reel-hud">
+                                        <span class="reel-muted-badge">🔇 Muted</span>
+                                        <button class="reel-fullscreen-pill-btn" aria-label="Fullscreen Reel"
+                                            title="View Fullscreen">
+                                            <span>⛶ Fullscreen</span>
+                                        </button>
+                                    </div>
+                                    <button class="modal-reel-play-btn" aria-label="Play Pratik Video Final">▶</button>
+                                </div>
+                                <div class="modal-reel-info">
+                                    <span class="modal-reel-title">Pratik Narrative Portrait Film</span>
+                                    <span class="modal-reel-meta">Individual Chronicle · 9:16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Images Section (Scoped POJ Images) -->
+                    <div class="modal-section">
+                        <div class="modal-section-heading">
+                            <h4><span>📷</span> Archival Photojournalism</h4>
+                            <span class="badge-note">Click any image to inspect in full resolution</span>
+                        </div>
+                        <div class="modal-images-grid">
+                            <div class="modal-img-card"
+                                data-src="assets/image/PEOPLE%20OF%20JAMSHEDPUR/IMG20251111172517.jpg"
+                                data-title="Jamshedpur Heritage Moment"
+                                data-specs="People of Jamshedpur · Documentary Archive">
+                                <img src="assets/image/PEOPLE%20OF%20JAMSHEDPUR/IMG20251111172517.jpg"
+                                    alt="People of Jamshedpur cultural moment" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Jamshedpur Heritage Moment</span>
+                                </div>
+                            </div>
+                            <div class="modal-img-card"
+                                data-src="assets/image/CINEMATIC/file_00000000815882119b15b6887c64100f.png"
+                                data-title="Sacred Floral Chronicle"
+                                data-specs="People of Jamshedpur · Cultural Celebration">
+                                <img src="assets/image/CINEMATIC/file_00000000815882119b15b6887c64100f.png"
+                                    alt="Lord Ganesha floral tribute" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Sacred Floral Chronicle</span>
+                                </div>
+                            </div>
+                            <div class="modal-img-card"
+                                data-src="assets/image/STREET%20PHOTOGRAPHY/file_0000000058f481fab661416eb3509bcc.png"
+                                data-title="Local Market Portrait" data-specs="People of Jamshedpur · Street Life">
+                                <img src="assets/image/STREET%20PHOTOGRAPHY/file_0000000058f481fab661416eb3509bcc.png"
+                                    alt="Market street scene" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">Local Market Portrait</span>
+                                </div>
+                            </div>
+                            <div class="modal-img-card"
+                                data-src="assets/image/STREET%20PHOTOGRAPHY/file_0000000078d081fab66397fb82d11002.png"
+                                data-title="City Street Dynamics" data-specs="People of Jamshedpur · Urban Motion">
+                                <img src="assets/image/STREET%20PHOTOGRAPHY/file_0000000078d081fab66397fb82d11002.png"
+                                    alt="Urban commute scene" loading="lazy">
+                                <div class="modal-img-overlay">
+                                    <span class="modal-img-caption">City Street Dynamics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =========================================
+             PHOTOGRAPHY GALLERY SECTION & LIGHTBOX
+             (ORGANIZED BY USER'S ALBUM FOLDERS)
+        ========================================== -->
+        <section id="gallery" class="gallery-section">
+            <div class="gallery-container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-top-line">
+                        <span class="section-tag">03 / PHOTOGRAPHY GALLERY</span>
+                        <div class="section-rule"></div>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h2 class="section-title">
+                            CAPTURED <span class="text-muted">FRAMES</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Curated visual albums directly from my camera rolls. Select any album folder to explore all
+                            photographs, or click any frame to inspect in full-resolution Lightbox.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Folder / Category Filters -->
+                <div class="gallery-filters-wrap reveal-on-scroll">
+                    <div class="gallery-folder-hint">
+                        <span class="folder-icon">📁</span>
+                        <span>EXPLORE ALBUMS:</span>
+                    </div>
+                    <div class="gallery-filters" role="tablist" aria-label="Photo Album Folders">
+                        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                            <span>All Works</span>
+                            <span class="count-badge">53</span>
+                        </button>
+                        <button class="filter-btn" data-filter="cinematic" role="tab" aria-selected="false">
+                            <span>Cinematic</span>
+                            <span class="count-badge">14</span>
+                        </button>
+                        <button class="filter-btn" data-filter="nature" role="tab" aria-selected="false">
+                            <span>Nature & Flowers</span>
+                            <span class="count-badge">17</span>
+                        </button>
+                        <button class="filter-btn" data-filter="street" role="tab" aria-selected="false">
+                            <span>Street Photography</span>
+                            <span class="count-badge">6</span>
+                        </button>
+                        <button class="filter-btn" data-filter="bw" role="tab" aria-selected="false">
+                            <span>Black & White</span>
+                            <span class="count-badge">4</span>
+                        </button>
+                        <button class="filter-btn" data-filter="mountains" role="tab" aria-selected="false">
+                            <span>Mountains</span>
+                            <span class="count-badge">12</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid" id="galleryGrid">
+
+                    <!-- Photo: Sacred Flame -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/135356.png" data-title="Sacred Flame"
+                        data-specs="Night Ambient · Long Exposure · f/1.8">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/135356.png"
+                                alt="Sacred Flame photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Sacred Flame</h3>
+                                    <span class="gallery-item-specs">Night Ambient · Long Exposure · f/1.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Dusk Silhouette -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/142468.png" data-title="Dusk Silhouette"
+                        data-specs="Pokhara Sunset Study · Architectural Lines">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/142468.png"
+                                alt="Dusk Silhouette photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Dusk Silhouette</h3>
+                                    <span class="gallery-item-specs">Pokhara Sunset Study · Architectural Lines</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Luminous Refraction -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/206230.png" data-title="Luminous Refraction"
+                        data-specs="Commercial Still Life · Golden Hour Light">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/206230.png"
+                                alt="Luminous Refraction photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Luminous Refraction</h3>
+                                    <span class="gallery-item-specs">Commercial Still Life · Golden Hour Light</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Ambient Lantern -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/206381.png" data-title="Ambient Lantern"
+                        data-specs="Handcrafted Bamboo Lantern · Low-Key Study">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/206381.png"
+                                alt="Ambient Lantern photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Ambient Lantern</h3>
+                                    <span class="gallery-item-specs">Handcrafted Bamboo Lantern · Low-Key Study</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Nocturnal Glow -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/207969.png" data-title="Nocturnal Glow"
+                        data-specs="Cinematic Night Exterior · 35mm Prime">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/207969.png"
+                                alt="Nocturnal Glow photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Nocturnal Glow</h3>
+                                    <span class="gallery-item-specs">Cinematic Night Exterior · 35mm Prime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Evening Rhythm I -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/IMG20260301203004.jpg" data-title="Evening Rhythm I"
+                        data-specs="Street Ambient Light · Low Light Performance">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/IMG20260301203004.jpg"
+                                alt="Evening Rhythm I photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Evening Rhythm I</h3>
+                                    <span class="gallery-item-specs">Street Ambient Light · Low Light Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Evening Rhythm II -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/IMG20260301203005.jpg" data-title="Evening Rhythm II"
+                        data-specs="Urban Glow · Color Calibration">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/IMG20260301203005.jpg"
+                                alt="Evening Rhythm II photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Evening Rhythm II</h3>
+                                    <span class="gallery-item-specs">Urban Glow · Color Calibration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Night Glow Frame I -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/IMG20260301215205.jpg" data-title="Night Glow Frame I"
+                        data-specs="Atmospheric City Bokeh · 50mm f/1.8">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/IMG20260301215205.jpg"
+                                alt="Night Glow Frame I photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Night Glow Frame I</h3>
+                                    <span class="gallery-item-specs">Atmospheric City Bokeh · 50mm f/1.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Night Glow Frame II -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/IMG20260301215210.jpg" data-title="Night Glow Frame II"
+                        data-specs="Low Light Street Tone · Rec.709 Color">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/IMG20260301215210.jpg"
+                                alt="Night Glow Frame II photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Night Glow Frame II</h3>
+                                    <span class="gallery-item-specs">Low Light Street Tone · Rec.709 Color</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Northern Companion -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/IMG20260604105621.jpg" data-title="Northern Companion"
+                        data-specs="Siberian Husky Portrait · Natural Bokeh">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/IMG20260604105621.jpg"
+                                alt="Northern Companion photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Northern Companion</h3>
+                                    <span class="gallery-item-specs">Siberian Husky Portrait · Natural Bokeh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Morning Perspective -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/IMG20260605090924.jpg" data-title="Morning Perspective"
+                        data-specs="Architectural Angle · Depth of Field">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/IMG20260605090924.jpg"
+                                alt="Morning Perspective photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Morning Perspective</h3>
+                                    <span class="gallery-item-specs">Architectural Angle · Depth of Field</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Sacred Garland -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/file_00000000815882119b15b6887c64100f.png"
+                        data-title="Sacred Garland" data-specs="Cultural Celebration · 85mm Prime · f/2.0">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/file_00000000815882119b15b6887c64100f.png"
+                                alt="Sacred Garland photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Sacred Garland</h3>
+                                    <span class="gallery-item-specs">Cultural Celebration · 85mm Prime · f/2.0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Temple Architecture -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/file_00000000a87c8211b21fc5e7681cca42.png"
+                        data-title="Temple Architecture" data-specs="Heritage Elevation · Intricate Carvings">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/file_00000000a87c8211b21fc5e7681cca42.png"
+                                alt="Temple Architecture photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Temple Architecture</h3>
+                                    <span class="gallery-item-specs">Heritage Elevation · Intricate Carvings</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Sacred Idol Sanctum -->
+                    <div class="gallery-item reveal-on-scroll" data-category="cinematic"
+                        data-src="assets/image/CINEMATIC/file_00000000c13c82088b69371cd98b179b.png"
+                        data-title="Sacred Idol Sanctum" data-specs="Ritual Illumination · Cultural Chronicle">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/CINEMATIC/file_00000000c13c82088b69371cd98b179b.png"
+                                alt="Sacred Idol Sanctum photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cinematic</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Sacred Idol Sanctum</h3>
+                                    <span class="gallery-item-specs">Ritual Illumination · Cultural Chronicle</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Winter Flora I -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20251225160318.jpg" data-title="Winter Flora I"
+                        data-specs="Macro Botanical · Soft Daylight">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20251225160318.jpg"
+                                alt="Winter Flora I photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Winter Flora I</h3>
+                                    <span class="gallery-item-specs">Macro Botanical · Soft Daylight</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Morning Dew Petals -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20251226101823.jpg"
+                        data-title="Morning Dew Petals" data-specs="Organic Flora · Natural Bokeh">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20251226101823.jpg"
+                                alt="Morning Dew Petals photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Morning Dew Petals</h3>
+                                    <span class="gallery-item-specs">Organic Flora · Natural Bokeh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Crimson Blossom -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20251226101845.jpg"
+                        data-title="Crimson Blossom" data-specs="Vibrant Garden Study · High Detail">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20251226101845.jpg"
+                                alt="Crimson Blossom photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Crimson Blossom</h3>
+                                    <span class="gallery-item-specs">Vibrant Garden Study · High Detail</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Sunlit Foliage -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20251229091647.jpg" data-title="Sunlit Foliage"
+                        data-specs="Golden Sun Glint · Nature Macro">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20251229091647.jpg"
+                                alt="Sunlit Foliage photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Sunlit Foliage</h3>
+                                    <span class="gallery-item-specs">Golden Sun Glint · Nature Macro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Garden Harmony -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20251229091823.jpg" data-title="Garden Harmony"
+                        data-specs="Botanical Texture · Sharp Focus">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20251229091823.jpg"
+                                alt="Garden Harmony photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Garden Harmony</h3>
+                                    <span class="gallery-item-specs">Botanical Texture · Sharp Focus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Canopy Sunburst -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260106131720.jpg"
+                        data-title="Canopy Sunburst" data-specs="Forest Canopy · Direct Light Flare">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260106131720.jpg"
+                                alt="Canopy Sunburst photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Canopy Sunburst</h3>
+                                    <span class="gallery-item-specs">Forest Canopy · Direct Light Flare</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Afternoon Blossom -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260106164802.jpg"
+                        data-title="Afternoon Blossom" data-specs="Delicate Flora · Soft Depth">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260106164802.jpg"
+                                alt="Afternoon Blossom photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Afternoon Blossom</h3>
+                                    <span class="gallery-item-specs">Delicate Flora · Soft Depth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Golden Hour Petals I -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260214181214.jpg"
+                        data-title="Golden Hour Petals I" data-specs="Warm Evening Sun · Petal Translucence">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260214181214.jpg"
+                                alt="Golden Hour Petals I photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Golden Hour Petals I</h3>
+                                    <span class="gallery-item-specs">Warm Evening Sun · Petal Translucence</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Golden Hour Petals II -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260214181223.jpg"
+                        data-title="Golden Hour Petals II" data-specs="Natural Spectrum · Macro Photography">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260214181223.jpg"
+                                alt="Golden Hour Petals II photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Golden Hour Petals II</h3>
+                                    <span class="gallery-item-specs">Natural Spectrum · Macro Photography</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Spring Awakening -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260222110123.jpg"
+                        data-title="Spring Awakening" data-specs="Botanical Geometry · Crisp Definition">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260222110123.jpg"
+                                alt="Spring Awakening photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Spring Awakening</h3>
+                                    <span class="gallery-item-specs">Botanical Geometry · Crisp Definition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Evening Bloom -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260228180928.jpg" data-title="Evening Bloom"
+                        data-specs="Dusk Light Transition · Pure Color">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260228180928.jpg"
+                                alt="Evening Bloom photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Evening Bloom</h3>
+                                    <span class="gallery-item-specs">Dusk Light Transition · Pure Color</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Wild Meadow Blossom -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260310160001.jpg"
+                        data-title="Wild Meadow Blossom" data-specs="Natural Habitat · Shallow Focus">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260310160001.jpg"
+                                alt="Wild Meadow Blossom photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Wild Meadow Blossom</h3>
+                                    <span class="gallery-item-specs">Natural Habitat · Shallow Focus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Sunlit Perennials -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260430182201.jpg"
+                        data-title="Sunlit Perennials" data-specs="Late Afternoon Glow · High Dynamic Range">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260430182201.jpg"
+                                alt="Sunlit Perennials photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Sunlit Perennials</h3>
+                                    <span class="gallery-item-specs">Late Afternoon Glow · High Dynamic Range</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Floral Elegance I -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260501180609.jpg"
+                        data-title="Floral Elegance I" data-specs="Petal Symmetry · Soft Highlight Roll-Off">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260501180609.jpg"
+                                alt="Floral Elegance I photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Floral Elegance I</h3>
+                                    <span class="gallery-item-specs">Petal Symmetry · Soft Highlight Roll-Off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Floral Elegance II -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260501180619.jpg"
+                        data-title="Floral Elegance II" data-specs="Organic Structure · Rich Foliage">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260501180619.jpg"
+                                alt="Floral Elegance II photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Floral Elegance II</h3>
+                                    <span class="gallery-item-specs">Organic Structure · Rich Foliage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Floral Elegance III -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260501180622.jpg"
+                        data-title="Floral Elegance III" data-specs="Macro Focus · Vibrant Natural Hue">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260501180622.jpg"
+                                alt="Floral Elegance III photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Floral Elegance III</h3>
+                                    <span class="gallery-item-specs">Macro Focus · Vibrant Natural Hue</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Summer Canopy -->
+                    <div class="gallery-item reveal-on-scroll" data-category="nature"
+                        data-src="assets/image/NATURE%20%26%20FLOWERS/IMG20260605102916.jpg" data-title="Summer Canopy"
+                        data-specs="Lush Greens · Diffused Sky Daylight">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/NATURE%20%26%20FLOWERS/IMG20260605102916.jpg"
+                                alt="Summer Canopy photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Nature & Flowers</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Summer Canopy</h3>
+                                    <span class="gallery-item-specs">Lush Greens · Diffused Sky Daylight</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: EVENING STREET -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="street"
+                        data-src="assets/image/STREET%20PHOTOGRAPHY/file_00000000017081faa23814901e821df2.png"
+                        data-title="EVENING STREET" data-specs="Ganges Riverfront · Documentarian Still">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/STREET%20PHOTOGRAPHY/file_00000000017081faa23814901e821df2.png"
+                                alt="EVENING STREETphotographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Street Photography</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">EVENING STREET</h3>
+                                    <span class="gallery-item-specs">Urban Walkway • Street Photography</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Market Passage -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="street"
+                        data-src="assets/image/STREET%20PHOTOGRAPHY/file_0000000058f481fab661416eb3509bcc.png"
+                        data-title="Market Passage" data-specs="Street Life · Candid Human Moment">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/STREET%20PHOTOGRAPHY/file_0000000058f481fab661416eb3509bcc.png"
+                                alt="Market Passage photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Street Photography</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Market Passage</h3>
+                                    <span class="gallery-item-specs">Street Life · Candid Human Moment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Urban Movement -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="street"
+                        data-src="assets/image/STREET%20PHOTOGRAPHY/file_0000000078d081fab66397fb82d11002.png"
+                        data-title="Urban Movement" data-specs="City Rhythm · Documentary Frame">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/STREET%20PHOTOGRAPHY/file_0000000078d081fab66397fb82d11002.png"
+                                alt="Urban Movement photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Street Photography</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Urban Movement</h3>
+                                    <span class="gallery-item-specs">City Rhythm · Documentary Frame</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Night Street Chronicle I -->
+                    <div class="gallery-item reveal-on-scroll" data-category="street"
+                        data-src="assets/image/STREET%20PHOTOGRAPHY/IMG20260505210433.jpg"
+                        data-title="Night Street Chronicle I" data-specs="Evening Bazaar · Ambient Tungsten">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/STREET%20PHOTOGRAPHY/IMG20260505210433.jpg"
+                                alt="Night Street Chronicle I photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Street Photography</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Night Street Chronicle I</h3>
+                                    <span class="gallery-item-specs">Evening Bazaar · Ambient Tungsten</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Night Street Chronicle II -->
+                    <div class="gallery-item reveal-on-scroll" data-category="street"
+                        data-src="assets/image/STREET%20PHOTOGRAPHY/IMG20260505210444.jpg"
+                        data-title="Night Street Chronicle II" data-specs="Street Vendor Horizon · Cinematic Mood">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/STREET%20PHOTOGRAPHY/IMG20260505210444.jpg"
+                                alt="Night Street Chronicle II photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Street Photography</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Night Street Chronicle II</h3>
+                                    <span class="gallery-item-specs">Street Vendor Horizon · Cinematic Mood</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Midnight Alleyway -->
+                    <div class="gallery-item reveal-on-scroll" data-category="street"
+                        data-src="assets/image/STREET%20PHOTOGRAPHY/IMG20260506025151.jpg"
+                        data-title="Midnight Alleyway" data-specs="Silent Urban Hours · High Contrast Shadow">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/STREET%20PHOTOGRAPHY/IMG20260506025151.jpg"
+                                alt="Midnight Alleyway photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Street Photography</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Midnight Alleyway</h3>
+                                    <span class="gallery-item-specs">Silent Urban Hours · High Contrast Shadow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Monochrome Shadow I -->
+                    <div class="gallery-item reveal-on-scroll" data-category="bw"
+                        data-src="assets/image/BLACK%20%26%20WHITE%20PHOTOGRAPHY/IMG_20260914_193440.jpg"
+                        data-title="Monochrome Shadow I" data-specs="High Contrast Black & White · Graphic Lines">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/BLACK%20%26%20WHITE%20PHOTOGRAPHY/IMG_20260914_193440.jpg"
+                                alt="Monochrome Shadow I photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Black & White</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Monochrome Shadow I</h3>
+                                    <span class="gallery-item-specs">High Contrast Black & White · Graphic Lines</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Monochrome Shadow II -->
+                    <div class="gallery-item reveal-on-scroll" data-category="bw"
+                        data-src="assets/image/BLACK%20%26%20WHITE%20PHOTOGRAPHY/IMG_20260914_193926.jpg"
+                        data-title="Monochrome Shadow II" data-specs="Deep Blacks & Silvery Midtones">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/BLACK%20%26%20WHITE%20PHOTOGRAPHY/IMG_20260914_193926.jpg"
+                                alt="Monochrome Shadow II photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Black & White</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Monochrome Shadow II</h3>
+                                    <span class="gallery-item-specs">Deep Blacks & Silvery Midtones</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Monochrome Architecture -->
+                    <div class="gallery-item reveal-on-scroll" data-category="bw"
+                        data-src="assets/image/BLACK%20%26%20WHITE%20PHOTOGRAPHY/IMG_20260914_194027.jpg"
+                        data-title="Monochrome Architecture" data-specs="Geometric Shadows · Pure Tonal Scale">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/BLACK%20%26%20WHITE%20PHOTOGRAPHY/IMG_20260914_194027.jpg"
+                                alt="Monochrome Architecture photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Black & White</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Monochrome Architecture</h3>
+                                    <span class="gallery-item-specs">Geometric Shadows · Pure Tonal Scale</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Monochrome Stillness -->
+                    <div class="gallery-item reveal-on-scroll" data-category="bw"
+                        data-src="assets/image/BLACK%20%26%20WHITE%20PHOTOGRAPHY/IMG_20260914_194130.jpg"
+                        data-title="Monochrome Stillness" data-specs="Fine Art B&W · Negative Space Study">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/BLACK%20%26%20WHITE%20PHOTOGRAPHY/IMG_20260914_194130.jpg"
+                                alt="Monochrome Stillness photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Black & White</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Monochrome Stillness</h3>
+                                    <span class="gallery-item-specs">Fine Art B&W · Negative Space Study</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Annapurna Sanctuary Ridge -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG_9690.JPG" data-title="Annapurna Sanctuary Ridge"
+                        data-specs="Himalayas, Nepal · 24mm f/8 · 1/800s">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG_9690.JPG"
+                                alt="Annapurna Sanctuary Ridge photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Annapurna Sanctuary Ridge</h3>
+                                    <span class="gallery-item-specs">Himalayas, Nepal · 24mm f/8 · 1/800s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Glacial Peaks in Sun -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG_9691.JPG" data-title="Glacial Peaks in Sun"
+                        data-specs="High Altitude Ridge · Crisp Alpine Air">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG_9691.JPG"
+                                alt="Glacial Peaks in Sun photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Glacial Peaks in Sun</h3>
+                                    <span class="gallery-item-specs">High Altitude Ridge · Crisp Alpine Air</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Himalayan Summit Wall -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG_9694.JPG" data-title="Himalayan Summit Wall"
+                        data-specs="Granite & Glacial Formations">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG_9694.JPG"
+                                alt="Himalayan Summit Wall photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Himalayan Summit Wall</h3>
+                                    <span class="gallery-item-specs">Granite & Glacial Formations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Annapurna Horizon Panorama -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG_9695.JPG" data-title="Annapurna Horizon Panorama"
+                        data-specs="Panoramic Mountain Crest · 35mm">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG_9695.JPG"
+                                alt="Annapurna Horizon Panorama photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Annapurna Horizon Panorama</h3>
+                                    <span class="gallery-item-specs">Panoramic Mountain Crest · 35mm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Alpine Snow Field -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG_9696.JPG" data-title="Alpine Snow Field"
+                        data-specs="High-Contrast Glacial Snow Shelf">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG_9696.JPG"
+                                alt="Alpine Snow Field photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Alpine Snow Field</h3>
+                                    <span class="gallery-item-specs">High-Contrast Glacial Snow Shelf</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Sub-Zero Mountain Face -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG_9697.JPG" data-title="Sub-Zero Mountain Face"
+                        data-specs="Telephoto Peak Detail · Sharp Contrast">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG_9697.JPG"
+                                alt="Sub-Zero Mountain Face photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Sub-Zero Mountain Face</h3>
+                                    <span class="gallery-item-specs">Telephoto Peak Detail · Sharp Contrast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Morning Light on Ridges -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG_9700.JPG" data-title="Morning Light on Ridges"
+                        data-specs="Golden Rays on Himalayan Ridge">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG_9700.JPG"
+                                alt="Morning Light on Ridges photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Morning Light on Ridges</h3>
+                                    <span class="gallery-item-specs">Golden Rays on Himalayan Ridge</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Peak Above the Clouds -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG_9704.JPG" data-title="Peak Above the Clouds"
+                        data-specs="Sea of Clouds · High Altitude Vantage">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG_9704.JPG"
+                                alt="Peak Above the Clouds photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Peak Above the Clouds</h3>
+                                    <span class="gallery-item-specs">Sea of Clouds · High Altitude Vantage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Machapuchare Fishtail Peak -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG20260607075437.jpg" data-title="Machapuchare Fishtail Peak"
+                        data-specs="Sacred Peak Breaking Through Cloud Cover">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG20260607075437.jpg"
+                                alt="Machapuchare Fishtail Peak photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Machapuchare Fishtail Peak</h3>
+                                    <span class="gallery-item-specs">Sacred Peak Breaking Through Cloud Cover</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Mist Across the Peaks -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG20260607075442.jpg" data-title="Mist Across the Peaks"
+                        data-specs="Atmospheric Weather Shift · Nepal Odyssey">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG20260607075442.jpg"
+                                alt="Mist Across the Peaks photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Mist Across the Peaks</h3>
+                                    <span class="gallery-item-specs">Atmospheric Weather Shift · Nepal Odyssey</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Annapurna South Face -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG20260607083851.jpg" data-title="Annapurna South Face"
+                        data-specs="Towering Wall · Telephoto Compression">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG20260607083851.jpg"
+                                alt="Annapurna South Face photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Annapurna South Face</h3>
+                                    <span class="gallery-item-specs">Towering Wall · Telephoto Compression</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Himalayan Morning Radiance -->
+                    <div class="gallery-item landscape reveal-on-scroll" data-category="mountains"
+                        data-src="assets/image/MOUNTAINS/IMG20260607083855.jpg" data-title="Himalayan Morning Radiance"
+                        data-specs="Sun Flare Rising Behind Himalayan Summit">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/image/MOUNTAINS/IMG20260607083855.jpg"
+                                alt="Himalayan Morning Radiance photographed by Ankush Kumar Thakur" class="gallery-img"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Mountains</span>
+                                <div class="gallery-meta-bottom">
+                                    <h3 class="gallery-item-title">Himalayan Morning Radiance</h3>
+                                    <span class="gallery-item-specs">Sun Flare Rising Behind Himalayan Summit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX MODAL (SCOPED TO CURRENT ACTIVE SECTION/FOLDER) -->
+        <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+            <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Lightbox">✕</button>
+            <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrevBtn"
+                aria-label="Previous Image">‹</button>
+            <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNextBtn" aria-label="Next Image">›</button>
+            <div class="lightbox-content">
+                <div class="lightbox-image-wrap">
+                    <img src="" alt="" class="lightbox-img" id="lightboxImg">
+                </div>
+                <div class="lightbox-caption">
+                    <div>
+                        <span class="lightbox-title" id="lightboxTitle"></span>
+                        <span class="lightbox-specs" id="lightboxSpecs"
+                            style="margin-left: 12px; color: var(--light-grey);"></span>
+                    </div>
+                    <span class="lightbox-counter" id="lightboxCounter"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =========================================
+             SERVICES SECTION
+        ========================================== -->
+        <section id="services" class="services-section">
+            <div class="services-container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-top-line">
+                        <span class="section-tag">04 / SERVICES & EXPERTISE</span>
+                        <div class="section-rule"></div>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h2 class="section-title">
+                            DISCIPLINES <span class="text-muted">& CAPABILITIES</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            A multidisciplinary creative suite spanning the entire production pipeline—from concept
+                            moodboards and camera operation to color science and web deployment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- SERVICE 01: CINEMATOGRAPHY -->
+                    <div class="service-card reveal-on-scroll">
+                        <div>
+                            <div class="service-top">
+                                <span class="service-num">01 / DIRECTION & CAMERA</span>
+                                <span class="service-icon">🎥</span>
+                            </div>
+                            <h3 class="service-name">Cinematography</h3>
+                            <p class="service-desc">
+                                Creating cinematic moving pictures with intentional framing, multi-point lighting
+                                design, gimbal fluid movement, and directorial precision for commercials, brand films,
+                                and documentaries.
+                            </p>
+                            <ul class="service-capabilities">
+                                <li><span class="dot">●</span> Commercial & Brand Video Direction</li>
+                                <li><span class="dot">●</span> Documentary & Narrative Storytelling</li>
+                                <li><span class="dot">●</span> Cinematic Lighting & Atmosphere Design</li>
+                                <li><span class="dot">●</span> Camera Operating & Gimbal Stabilization</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-tool-tag">Smartphone Camera</span>
+                            <span class="service-tool-tag">Mobile Cinematography</span>
+                            <span class="service-tool-tag">Natural Lighting</span>
+                            <span class="service-tool-tag">Cinematic Framing</span>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 02: PHOTOGRAPHY -->
+                    <div class="service-card reveal-on-scroll">
+                        <div>
+                            <div class="service-top">
+                                <span class="service-num">02 / STILL FRAMES</span>
+                                <span class="service-icon">📷</span>
+                            </div>
+                            <h3 class="service-name">Photography</h3>
+                            <p class="service-desc">
+                                High-resolution still visual storytelling across commercial products, editorial
+                                portraits, cultural festivals, and remote expedition landscapes with crisp optical
+                                fidelity.
+                            </p>
+                            <ul class="service-capabilities">
+                                <li><span class="dot">●</span> Commercial Product & Skincare Still Life</li>
+                                <li><span class="dot">●</span> Editorial & Environmental Portraits</li>
+                                <li><span class="dot">●</span> Street & Cultural Photojournalism</li>
+                                <li><span class="dot">●</span> High-Altitude Expedition & Landscapes</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-tool-tag">Studio Strobe</span>
+                            <span class="service-tool-tag">Natural Light</span>
+                            <span class="service-tool-tag">High Dynamic Range</span>
+                            <span class="service-tool-tag">Adobe Lightroom</span>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 03: VIDEO EDITING & AUDIO DESIGN -->
+                    <div class="service-card reveal-on-scroll">
+                        <div>
+                            <div class="service-top">
+                                <span class="service-num">03 / POST-PRODUCTION</span>
+                                <span class="service-icon">✂️</span>
+                            </div>
+
+                            <h3 class="service-name">Video Editing & Audio Design</h3>
+
+                            <p class="service-desc">
+                                Turning raw footage into engaging visual stories through precise
+                                editing, cinematic pacing, color grading, creative transitions,
+                                sound design, and platform-focused content for modern digital media.
+                            </p>
+
+                            <ul class="service-capabilities">
+                                <li><span class="dot">●</span> Cinematic & Narrative Video Editing</li>
+                                <li><span class="dot">●</span> Color Correction & Professional Color Grading</li>
+                                <li><span class="dot">●</span> Sound Design, Audio Editing & Mixing</li>
+                                <li><span class="dot">●</span> Reels, Shorts & Social Media Content</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-footer">
+                            <span class="service-tool-tag">Premiere Pro</span>
+                            <span class="service-tool-tag">DaVinci Resolve</span>
+                            <span class="service-tool-tag">CapCut</span>
+                            <span class="service-tool-tag">Filmora</span>
+                            <span class="service-tool-tag">Audacity</span>
+                            <span class="service-tool-tag">FL Studio</span>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 04: WEB DEVELOPMENT -->
+                    <div class="service-card reveal-on-scroll">
+                        <div>
+                            <div class="service-top">
+                                <span class="service-num">04 / DIGITAL CRAFT</span>
+                                <span class="service-icon">💻</span>
+                            </div>
+                            <h3 class="service-name">Web Development</h3>
+                            <p class="service-desc">
+                                Building lightning-fast, visually stunning, and responsive portfolio & brand websites
+                                that present visual work with aesthetic elegance and flawless cross-device performance.
+                            </p>
+                            <ul class="service-capabilities">
+                                <li><span class="dot">●</span> Bespoke Portfolio & Creative Agency Sites</li>
+                                <li><span class="dot">●</span> Interactive Frontends & Smooth UI Animations</li>
+                                <li><span class="dot">●</span> Responsive Mobile-First Architecture</li>
+                                <li><span class="dot">●</span> Core Web Vitals & Media Optimization</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-tool-tag">HTML5 / Modern CSS</span>
+                            <span class="service-tool-tag">JavaScript ES6+</span>
+                            <span class="service-tool-tag">Responsive UI/UX</span>
+                            <span class="service-tool-tag">Git / GitHub</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             EXPERIENCE & PROCESS SECTION
+        ========================================== -->
+        <section id="experience" class="experience-section">
+            <div class="experience-container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-top-line">
+                        <span class="section-tag">05 / TIMELINE & METHODOLOGY</span>
+                        <div class="section-rule"></div>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h2 class="section-title">
+                            EXPERIENCE <span class="text-muted">& PROCESS</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Proven track record collaborating with international companies, non-profit institutions, and
+                            local communities with an uncompromising 4-step creative methodology.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-layout">
+
+                    <!-- Left: Client History Timeline -->
+                    <div class="timeline-wrap">
+                        <!-- Item 1: Loriini Skincare -->
+                        <div class="timeline-card reveal-on-scroll">
+                            <div class="timeline-header">
+                                <h3 class="timeline-client-name">Loriini Skincare</h3>
+                                <span class="timeline-badge">United States · Remote</span>
+                            </div>
+                            <div class="timeline-role">Visual Creative Director, Cinematographer & Editor</div>
+                            <p class="timeline-desc">
+                                Spearheaded commercial video and still life production for Loriini Skincare's digital
+                                catalog and launch campaigns. Directed aesthetic lighting, color-accurate product
+                                showcases, and high-conversion social assets.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Commercial Video</span>
+                                <span class="timeline-tag">Product Photography</span>
+                                <span class="timeline-tag">E-Commerce Direction</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 2: Youth For Elders -->
+                        <div class="timeline-card reveal-on-scroll">
+                            <div class="timeline-header">
+                                <h3 class="timeline-client-name">Youth For Elders</h3>
+                                <span class="timeline-badge">United States · Non-Profit</span>
+                            </div>
+                            <div class="timeline-role">Lead Impact Storyteller & Video Editor</div>
+                            <p class="timeline-desc">
+                                Produced advocacy visual media for an American non-profit dedicated to elderly support.
+                                Edited fundraising appeals, documentary shorts, and social media reels designed to
+                                inspire donors and youth volunteers.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Impact Video</span>
+                                <span class="timeline-tag">Advocacy Editing</span>
+                                <span class="timeline-tag">Fundraising Outreach</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: People of Jamshedpur -->
+                        <div class="timeline-card reveal-on-scroll">
+                            <div class="timeline-header">
+                                <h3 class="timeline-client-name">People of Jamshedpur</h3>
+                                <span class="timeline-badge">Community Archive</span>
+                            </div>
+                            <div class="timeline-role">Founding Documentarian & Lead Photographer</div>
+                            <p class="timeline-desc">
+                                Curated and photographed human stories across Jamshedpur's diverse cultural fabric,
+                                capturing religious festivals, artisans, street life, and industrial heritage into a
+                                lasting visual chronicle.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Photojournalism</span>
+                                <span class="timeline-tag">Street Portraits</span>
+                                <span class="timeline-tag">Community Building</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 4: Independent Creative Direction -->
+                        <div class="timeline-card reveal-on-scroll">
+                            <div class="timeline-header">
+                                <h3 class="timeline-client-name">Ankush Cinefilms</h3>
+                                <span class="timeline-badge">Independent Studio</span>
+                            </div>
+                            <div class="timeline-role">Cinematographer, Photographer & Web Developer</div>
+                            <p class="timeline-desc">
+                                Providing end-to-end creative direction, high-resolution photography, post-production
+                                color grading, and modern portfolio web development for discerning clients worldwide.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Full-Stack Production</span>
+                                <span class="timeline-tag">Web Development</span>
+                                <span class="timeline-tag">Color Grading</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: 4-Stage Creative Process -->
+                    <div class="process-wrap">
+                        <div class="process-header-box reveal-on-scroll">
+                            <h3>THE 4-STAGE PIPELINE</h3>
+                            <p>How I take an abstract creative concept and forge it into a polished, high-performing
+                                visual asset.</p>
+                        </div>
+
+                        <div class="process-step-card reveal-on-scroll">
+                            <span class="step-num">01</span>
+                            <div class="step-content">
+                                <h4>Discovery & Visual Moodboarding</h4>
+                                <p>Unpacking brand essence, establishing narrative goals, scriptwriting, shot lists, and
+                                    developing a coherent lighting/color reference board.</p>
+                            </div>
+                        </div>
+
+                        <div class="process-step-card reveal-on-scroll">
+                            <span class="step-num">02</span>
+                            <div class="step-content">
+                                <h4>Production & On-Set Direction</h4>
+                                <p>Executing the shoot with cinema camera rigs, intentional light placement, gimbal
+                                    fluidity, and direct guidance for natural performances.</p>
+                            </div>
+                        </div>
+
+                        <div class="process-step-card reveal-on-scroll">
+                            <span class="step-num">03</span>
+                            <div class="step-content">
+                                <h4>Editorial Rhythm & Color Science</h4>
+                                <p>Sculpting the cut with musical precision, Foley sound layers, and professional color
+                                    grading in DaVinci Resolve Studio for cinematic depth.</p>
+                            </div>
+                        </div>
+
+                        <div class="process-step-card reveal-on-scroll">
+                            <span class="step-num">04</span>
+                            <div class="step-content">
+                                <h4>Multi-Platform Delivery & Web Integration</h4>
+                                <p>Exporting tailored 4K master files, vertical mobile formats, web-optimized assets,
+                                    and interactive digital experiences for maximum engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             ABOUT SECTION
+        ========================================== -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-top-line">
+                        <span class="section-tag">06 / THE CREATOR</span>
+                        <div class="section-rule"></div>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h2 class="section-title">
+                            ABOUT <span class="text-muted">ANKUSH</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Bridging the art of cinematic visual storytelling with technical mastery of code and
+                            post-production craft.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- About Visual Box -->
+                    <div class="about-visual-box reveal-on-scroll">
+                        <div class="about-image-wrapper">
+                            <img src="assets/image/ABOUT.png"
+                                alt="Ankush Kumar Thakur posing with his camera against mountain lake backdrop"
+                                class="about-img" loading="lazy">
+                            <span class="about-img-tag">Ankush Kumar Thakur · Behind the Camera</span>
+                        </div>
+                    </div>
+
+                    <!-- About Narrative -->
+                    <div class="about-narrative reveal-on-scroll">
+                        <p class="about-bio-lead">
+                            I am a visual creator who believes that <span class="highlight">technology without soul is
+                                noise</span>, and art without precision remains unfinished.
+                        </p>
+                        <p class="about-bio-text">
+                            Based in India and collaborating with forward-thinking clients in the United States and
+                            globally, I operate seamlessly across multiple disciplines: behind the camera as a
+                            cinematographer and photographer, in the editing suite sculpting light and rhythm, and in
+                            code building fast, engaging web applications.
+                        </p>
+                        <p class="about-bio-text">
+                            From commercial branding for American skincare pioneers like <strong>Loriini
+                                Skincare</strong> to humanitarian storytelling for <strong>Youth For Elders</strong> and
+                            grassroots cultural preservation in <strong>People of Jamshedpur</strong>, my mission is
+                            consistent: make every frame count.
+                        </p>
+
+                        <!-- Philosophy Quote Box -->
+                        <div class="about-quote-box">
+                            <p>"Every frame has a purpose. Every visual has a story."</p>
+                            <span>— Ankush Kumar Thakur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toolkit Breakdown -->
+                <div class="toolkit-wrap reveal-on-scroll">
+                    <h3 class="toolkit-heading">GEAR & TECHNOLOGY TOOLKIT</h3>
+                    <div class="toolkit-grid">
+                        <div class="toolkit-card">
+                            <h4>Mobile Cinematography</h4>
+                            <ul>
+                                <li>Professional Smartphone Camera Systems</li>
+                                <li>Manual Camera Controls & Pro Modes</li>
+                                <li>Mobile Cinematic Framing & Composition</li>
+                                <li>Natural Light & Available Light Shooting</li>
+                                <li>Handheld & Stabilized Mobile Shooting</li>
+                            </ul>
+                        </div>
+
+                        <div class="toolkit-card">
+                            <h4>Filmmaking & Cinematography</h4>
+                            <ul>
+                                <li>Shot Composition & Visual Storytelling</li>
+                                <li>Camera Movement & Dynamic Framing</li>
+                                <li>Lighting & Exposure Control</li>
+                                <li>Low-Light & Daylight Cinematography</li>
+                                <li>Cinematic B-Roll & Detail Shots</li>
+                            </ul>
+                        </div>
+
+                        <div class="toolkit-card">
+                            <h4>Post-Production</h4>
+                            <ul>
+                                <li>Adobe Premiere Pro</li>
+                                <li>Davinci Resolve</li>
+                                <li>Professional Color Grading</li>
+                                <li>Sound Design & Audio Editing</li>
+                                <li>Motion Graphics & Visual Effects</li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="toolkit-card">
+                            <h4>Web Engineering & Creative Tech</h4>
+                            <ul>
+                                <li>Semantic HTML5 & Modern Responsive CSS</li>
+                                <li>JavaScript (ES6+) & Web APIs</li>
+                                <li>Interactive UI/UX & Motion Interactions</li>
+                                <li>Performance, SEO & Core Web Vitals</li>
+                                <li>Git Version Control & Modern Tooling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             CONTACT SECTION
+        ========================================== -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-top-line">
+                        <span class="section-tag">07 / GET IN TOUCH</span>
+                        <div class="section-rule"></div>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h2 class="section-title">
+                            LET'S BUILD <span class="text-muted">TOGETHER</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Have an upcoming commercial campaign, documentary project, photography assignment, or web
+                            platform you want to bring to life? Let's connect directly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-layout">
+
+                    <!-- Direct Contact Channels & Socials -->
+                    <div class="contact-channels reveal-on-scroll">
+                        <p class="contact-lead-text">
+                            Available for remote international projects, on-location shoots, commercial commissions, and
+                            full-stack creative direction. Reach out directly via call, WhatsApp, email, or social
+                            media.
+                        </p>
+
+                        <div class="direct-cards-grid">
+                            <!-- Direct Phone -->
+                            <a href="tel:8544007761" class="direct-card"
+                                aria-label="Call Ankush Kumar Thakur at 8544007761">
+                                <div class="direct-card-info">
+                                    <span class="direct-card-label">Direct Phone Call</span>
+                                    <span class="direct-card-val">+91 8544007761</span>
+                                </div>
+                                <span class="direct-card-icon">📞</span>
+                            </a>
+
+                            <!-- Instant WhatsApp -->
+                            <a href="https://wa.me/918544007761?text=Hi%20Ankush,%20I'd%20love%20to%20collaborate%20with%20you%20on%20a%20project!"
+                                target="_blank" rel="noopener noreferrer" class="direct-card"
+                                aria-label="Chat with Ankush on WhatsApp">
+                                <div class="direct-card-info">
+                                    <span class="direct-card-label">Instant WhatsApp Chat</span>
+                                    <span class="direct-card-val">+91 8544007761</span>
+                                </div>
+                                <span class="direct-card-icon">💬</span>
+                            </a>
+
+                            <!-- Email ID -->
+                            <a href="mailto:ankushkumar1312005@gmail.com?subject=Project%20Inquiry%20%E2%80%94%20Ankush%20Cinefilms"
+                                class="direct-card" aria-label="Send email to Ankush Kumar Thakur">
+                                <div class="direct-card-info">
+                                    <span class="direct-card-label">Official Email ID</span>
+                                    <span class="direct-card-val">ankushkumar1312005@gmail.com</span>
+                                </div>
+                                <span class="direct-card-icon">✉️</span>
+                            </a>
+
+                            <!-- Location -->
+                            <div class="direct-card">
+                                <div class="direct-card-info">
+                                    <span class="direct-card-label">Location & Availability</span>
+                                    <span class="direct-card-val">Jamshedpur, India · Available Worldwide</span>
+                                </div>
+                                <span class="direct-card-icon">📍</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Profiles Grid -->
+                        <div class="social-links-box">
+                            <div class="social-links-title">CONNECT ON SOCIAL MEDIA</div>
+                            <div class="social-cards-grid">
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/ankush_cinefilms?stkn=MTk2NmkzbW00bGYwYg=="
+                                    target="_blank" rel="noopener noreferrer" class="social-card"
+                                    aria-label="Ankush Instagram profile">
+                                    <div class="social-platform">
+                                        <span>Instagram</span>
+                                        <span>↗</span>
+                                    </div>
+                                    <span class="social-handle">@ankush_cinefilms</span>
+                                </a>
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/ankush-kumar-thakur-8b5246381?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                    target="_blank" rel="noopener noreferrer" class="social-card"
+                                    aria-label="Ankush LinkedIn profile">
+                                    <div class="social-platform">
+                                        <span>LinkedIn</span>
+                                        <span>↗</span>
+                                    </div>
+                                    <span class="social-handle">Ankush Kumar Thakur</span>
+                                </a>
+
+                                <!-- GitHub -->
+                                <a href="https://github.com/ankushkumar1312005-ops" target="_blank"
+                                    rel="noopener noreferrer" class="social-card" aria-label="Ankush GitHub profile">
+                                    <div class="social-platform">
+                                        <span>GitHub</span>
+                                        <span>↗</span>
+                                    </div>
+                                    <span class="social-handle">@ankushkumar1312005-ops</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Inquiry Form -->
+                    <div class="inquiry-form-wrap reveal-on-scroll">
+                        <div class="form-header">
+                            <h3>START A CONVERSATION</h3>
+                            <p>Fill out the form below for commercial quotes, project estimates, or collaborative
+                                partnerships.</p>
+                        </div>
+
+                        <form class="contact-form" id="inquiryForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="formName" class="form-label">Your Name</label>
+                                    <input type="text" id="formName" name="name" class="form-input"
+                                        placeholder="e.g. John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formEmail" class="form-label">Email Address</label>
+                                    <input type="email" id="formEmail" name="email" class="form-input"
+                                        placeholder="e.g. john@brand.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="formService" class="form-label">Service Needed</label>
+                                    <select id="formService" name="service" class="form-select">
+                                        <option value="Cinematography">Cinematography & Brand Film</option>
+                                        <option value="Photography">Commercial Photography</option>
+                                        <option value="Video Editing">Video Editing & Color Grading</option>
+                                        <option value="Web Development">Portfolio / Web Development</option>
+                                        <option value="Full Creative Direction">Full Creative Direction</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formPhone" class="form-label">Phone / WhatsApp (Optional)</label>
+                                    <input type="tel" id="formPhone" name="phone" class="form-input"
+                                        placeholder="+1 (555) 000-0000">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formMessage" class="form-label">Project Details & Vision</label>
+                                <textarea id="formMessage" name="message" class="form-textarea"
+                                    placeholder="Tell me about your brand, concept, timeline, and goals..."
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-actions-group">
+                                <button type="submit" class="form-submit-btn wa-submit-btn" id="btnSubmitWhatsApp">
+                                    <span>Send via WhatsApp (Direct)</span>
+                                    <span class="btn-icon">💬 ↗</span>
+                                </button>
+                                <button type="button" class="form-secondary-btn email-submit-btn" id="btnSubmitEmail">
+                                    <span>Send via Email</span>
+                                    <span class="btn-icon">✉️ ↗</span>
+                                </button>
+                            </div>
+                            <span class="form-actions-hint">⚡ 1-Click Instant Delivery — Opens direct chat with Ankush
+                                (+91 8544007761) or your email client</span>
+
+                            <div class="form-feedback" id="formFeedback"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top-row">
+                <div class="footer-brand-huge">
+                    ANKUSH <span>KUMAR THAKUR</span>
+                </div>
+            </div>
+
+            <div class="footer-middle-row">
+                <!-- Live IST Clock -->
+                <div class="footer-clock-box">
+                    <span class="pulse-dot"></span>
+                    <span id="liveIstClock">Jamshedpur, IN · --:--:-- IST</span>
+                </div>
+
+                <!-- Footer Navigation -->
+                <nav class="footer-links-nav" aria-label="Footer links">
+                    <a href="#showreel">Reel</a>
+                    <a href="#work">Work</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#services">Services</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <!-- Back to top button -->
+                <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+                    <span>Back to Top</span>
+                    <span>↑</span>
+                </button>
+            </div>
+
+            <div class="footer-bottom-row">
+                <div>© 2026 Ankush Kumar Thakur. All rights reserved.</div>
+                <div>Cinematographer · Photographer · Video Editor · Web Developer</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

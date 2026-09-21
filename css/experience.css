@@ -1,0 +1,225 @@
+/* =========================================
+   EXPERIENCE & TIMELINE CSS — ANKUSH PORTFOLIO
+   ========================================= */
+
+.experience-section {
+    position: relative;
+    width: 100%;
+    padding: var(--section-padding-y) var(--section-padding-x);
+    background: var(--dark-surface);
+}
+
+.experience-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Two-column layout: Left Timeline / Right Workflow */
+.experience-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 6vw;
+    margin-top: 50px;
+}
+
+/* ---------- CLIENT TIMELINE ---------- */
+.timeline-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 35px;
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.timeline-card:hover {
+    border-color: var(--border-hover);
+    transform: translateX(6px);
+    background: var(--card-hover);
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.timeline-client-name {
+    font-family: var(--font-display);
+    font-size: 26px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.timeline-badge {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    background: rgba(200, 255, 0, 0.08);
+    border: 1px solid rgba(200, 255, 0, 0.3);
+    color: var(--lime);
+    text-transform: uppercase;
+}
+
+.timeline-role {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--light-grey);
+    margin-bottom: 14px;
+}
+
+.timeline-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--light-grey);
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.timeline-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--grey);
+}
+
+/* ---------- 4-STAGE CREATIVE PROCESS ---------- */
+.process-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.process-header-box {
+    margin-bottom: 10px;
+}
+
+.process-header-box h3 {
+    font-family: var(--font-display);
+    font-size: 32px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.process-header-box p {
+    font-size: 14px;
+    color: var(--light-grey);
+    line-height: 1.6;
+}
+
+.process-step-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px 28px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all var(--transition-fast);
+}
+
+.process-step-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--lime);
+}
+
+.step-num {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--lime);
+}
+
+.step-content h4 {
+    font-family: var(--font-display);
+    font-size: 18px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.step-content p {
+    font-size: 13px;
+    color: var(--light-grey);
+    line-height: 1.6;
+}
+
+/* Responsive Experience */
+@media (max-width: 1024px) {
+    .experience-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-layout {
+        gap: 36px;
+        margin-top: 30px;
+    }
+
+    .timeline-wrap {
+        gap: 20px;
+    }
+
+    .timeline-card {
+        padding: 22px 18px;
+        border-radius: var(--radius-sm);
+    }
+
+    .timeline-client-name {
+        font-size: 20px;
+    }
+
+    .timeline-role {
+        font-size: 13.5px;
+        margin-bottom: 10px;
+    }
+
+    .timeline-desc {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .process-header-box h3 {
+        font-size: clamp(22px, 6.5vw, 28px);
+    }
+
+    .process-wrap {
+        gap: 16px;
+    }
+
+    .process-step-card {
+        padding: 18px 16px;
+        gap: 14px;
+        border-radius: var(--radius-sm);
+    }
+
+    .step-content h4 {
+        font-size: 16px;
+    }
+
+    .step-content p {
+        font-size: 12.5px;
+    }
+}
+
