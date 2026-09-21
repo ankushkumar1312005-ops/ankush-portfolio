@@ -43,19 +43,64 @@
     margin-top: 40px;
 }
 
-@media (min-width: 1300px) {
-    /* 5 items: first row 3, second row 2 centered or wide */
+/* =========================================
+   SHOWREEL GRID — RESPONSIVE & AUTOMATIC
+   ========================================= */
+
+.showreel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* Every showreel card automatically fills its grid column */
+.showreel-grid .showreel-card {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    grid-column: auto;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1024px) {
     .showreel-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
     }
-    .showreel-grid .showreel-card:nth-child(1),
-    .showreel-grid .showreel-card:nth-child(2),
-    .showreel-grid .showreel-card:nth-child(3) {
-        grid-column: span 2;
+
+    .showreel-grid .showreel-card {
+        width: 100%;
     }
-    .showreel-grid .showreel-card:nth-child(4),
-    .showreel-grid .showreel-card:nth-child(5) {
-        grid-column: span 3;
+}
+
+/* =========================================
+   PHONE
+   ========================================= */
+
+@media (max-width: 700px) {
+    .showreel-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .showreel-grid .showreel-card {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   SMALL PHONE
+   ========================================= */
+
+@media (max-width: 480px) {
+    .showreel-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 }
 
